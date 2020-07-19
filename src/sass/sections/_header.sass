@@ -26,10 +26,7 @@
         background: url('../images/layer.svg') bottom no-repeat;
         z-index: 2
 
-    &-wrapper 
-        width: 100%
-        max-width: 1140px
-        margin: 0 auto
+    &__wrapper 
         padding-top: 83px
         display: flex
         flex-direction: column
@@ -61,8 +58,9 @@
         max-width: 1000px
         height: auto
         border-radius: 10px
-        margin-bottom: -20%
+        margin-bottom: -100px
         z-index: 10
+        box-shadow: 0 12px 22px rgba(0, 9, 128, 0.05), 0 20px 36px rgba(0, 9, 128, 0.075)
 
 .navbar
     padding: 7.5px 1rem
@@ -77,30 +75,12 @@
     @media screen and ( max-width: 1024px)
         background: #59687C
 
-    &-wrapper
+    &__wrapper
         display: flex
         justify-content: space-between
         align-items: center
-        margin: 0 auto
-        width: 100%
-        max-width: 1140px
         transition: all .5s ease
 
-    .nav-list li 
-        padding: 1rem
-        transition: all .5s ease
-
-        @media screen and ( max-width: 1024px)
-            padding: .85rem
-        
-    .nav-list a 
-        font-size: 1rem
-        color: #fff
-        font-weight: 600
-
-        @media screen and ( max-width: 1024px)
-            font-size: .85rem
-        
     .nav-list
         transition: all .5s ease
         display: flex
@@ -121,12 +101,27 @@
             background: #59687C
             z-index: 15
             box-shadow: 0 7px 10px rgba(0, 9, 128, 0.035), 0 9px 18px rgba(0, 9, 128, 0.05)
+
+        &__item
+            padding: 1rem
+            transition: all .5s ease
+
+            @media screen and ( max-width: 1024px)
+                padding: .85rem
+        
+        & a 
+            font-size: 1rem
+            color: #fff
+            font-weight: 600
+
+            @media screen and ( max-width: 1024px)
+                font-size: .85rem
     
     &__right
         display: flex
         align-items: center
 
-    .btn 
+    &__btn 
         z-index: 30
         padding: .6rem 1rem
         background: #ffffff
@@ -141,7 +136,7 @@
             font-size: .7rem
             padding: .5rem .8rem
 
-    .logo
+    &__logo
         z-index: 30
 
         @media screen and ( max-width: 768px)
