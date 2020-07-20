@@ -217,7 +217,7 @@ h2 {
         width: 123px; } }
 
 .features {
-  padding: 10rem 1rem 1rem; }
+  padding: 10rem 1.5rem 1rem; }
   .features__wrapper {
     text-align: center; }
   .features__item {
@@ -253,7 +253,7 @@ h2 {
     max-width: 300px; }
 
 .steps {
-  padding: 10rem 1rem 1rem;
+  padding: 6rem 1.5rem 3rem;
   background: #f6f7f8;
   color: #59687c; }
   .steps__wrapper {
@@ -365,7 +365,7 @@ h2 {
         max-width: 90%; } }
 
 .integration {
-  padding: 6rem 1rem;
+  padding: 6rem 1.5rem;
   background: linear-gradient(45deg, #8089ff 0%, #54ceff 100%);
   color: #fff; }
   .integration__wrapper {
@@ -428,7 +428,7 @@ h2 {
       height: 100px; }
 
 .design {
-  padding: 8rem 1rem; }
+  padding: 5rem 1.5rem; }
   .design__wrapper {
     display: flex;
     flex-wrap: wrap;
@@ -447,8 +447,27 @@ h2 {
     max-width: 700px;
     height: auto; }
 
+.overview {
+  padding: 5rem 1.5rem;
+  background: #f6f7f8; }
+  .overview__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center; }
+  .overview__item {
+    text-align: center; }
+    .overview__item img {
+      display: block;
+      width: 100%;
+      max-width: 538px;
+      height: auto; }
+  .overview__descr {
+    margin: 1rem auto;
+    max-width: 400px; }
+
 .award {
-  padding: 5rem 1rem;
+  padding: 3rem 1.5rem;
   color: #fff;
   background: #59687c; }
   .award__wrapper {
@@ -457,7 +476,7 @@ h2 {
     justify-content: center;
     align-items: center; }
   .award__content {
-    max-width: 350px; }
+    max-width: 500px; }
   .award__descr {
     margin: 1rem 0 2rem 0; }
   .award__image {

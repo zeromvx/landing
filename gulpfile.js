@@ -65,7 +65,7 @@ function sassWatch() {
 }
 
 function watchFiles() {
-    watch('./src/sass/*', sassWatch);
+    watch('./src/sass/**/*', sassWatch);
     watch('./src/*.html', html);
     watch('./src/js/*', js);
     watch('./src/images/*', img);
