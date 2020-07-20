@@ -5,7 +5,7 @@
     font-family: 'Open Sans', sans-serif
 
 body
-    color: #708198
+    color: var(--text-dark-color)
 
 ul
     list-style: none
@@ -14,11 +14,10 @@ a
     text-decoration: none
     color: #000
 
-
 h2
     font-size: 2rem
 
-    @media screen and ( max-width: 768px)
+    @include _768
         font-size: 1.5rem
 
     
