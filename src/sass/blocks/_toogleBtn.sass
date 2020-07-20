@@ -1,20 +1,21 @@
 .toggle-btn
+    z-index: 30
+    display: none
+    margin-right: 0px
     width: 45px
     height: 45px
     text-align: center
-    margin-right: 0px
     cursor: pointer
-    z-index: 30
     background: #59687C
-    display: none
+    
 
     .toggle-icon
-        width: 100%
-        height: 100%
-        padding: 0px 10px
         position: relative
         top: 0px
         left: 0px
+        padding: 0px 10px
+        width: 100%
+        height: 100%
         -webkit-transition: .5s ease-in-out
         -moz-transition: .5s ease-in-out
         -o-transition: .5s ease-in-out
@@ -24,12 +25,12 @@
   
     .toggle-icon span 
         display: block
-        height: 2px
-        width: 45%
-        left: 13px
         position: absolute
-        background: #fff
+        left: 13px
         border-radius: 9px
+        width: 45%
+        height: 2px
+        background: #fff
         opacity: 1
         transform: rotate(0deg)
         transition: .25s ease-in-out   
