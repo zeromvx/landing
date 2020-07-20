@@ -1,0 +1,76 @@
+.pricing
+    padding: 8rem 1.5rem
+
+    &__wrapper
+        text-align: center
+
+    &__descr
+        padding: 1rem 0 3rem
+
+    &__text
+        padding: 3rem 0 1rem
+
+    .swiper-container 
+        width: 100%
+        max-width: 999px
+        height: 480px
+        padding: 1rem 0
+        margin: 1rem auto
+
+    .swiper-slide 
+        background: #fff
+        border: .5px solid #e8e8e8
+        border-radius: 5px
+        box-shadow: 0 7px 7px rgba(0, 9, 128, 0.05), 0 6px 14px rgba(0, 9, 128, 0.075)
+
+        &-active
+            transition: all .2s ease
+            transform: scale(1.05)
+            z-index: 2
+
+        &-active .card__heading
+            background: linear-gradient(45deg, #fe60a1 0%, #ff8765 100%)
+
+    
+
+.card
+    font-size: 1rem
+
+    &__heading
+        color: #ffffff
+        background: #59687c
+        height: 215px
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        position: relative
+
+        &::after
+            content: ''
+            position: absolute
+            bottom: 0
+            left: 0
+            margin-bottom: -1px
+            width: 100%
+            height: 100%
+            background: url('../images/layer.svg') bottom no-repeat;
+            z-index: 1
+
+    &__title
+        font-size: 1.5rem
+
+    &__price
+        margin: 1rem 0
+        .price
+            font-size: 2rem
+
+    &__descr
+        height: calc(100% - 215px)
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+
+        li
+            padding: .5rem 0
