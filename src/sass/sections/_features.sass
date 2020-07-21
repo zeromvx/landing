@@ -2,6 +2,7 @@
     padding: 10rem 1.5rem 1rem
 
     &__wrapper
+        +wrapper
         text-align: center  
 
     &__item
@@ -25,20 +26,19 @@
         margin: .5rem auto
 
     &__icon
+        position: relative
         margin-bottom: 2rem
         border-radius: 50%
         width: 70px
         height: 70px
         box-shadow: 0 7px 15px rgba(0, 9, 128, 0.05), 0 12px 28px rgba(0, 9, 128, 0.075)
 
-    .icon--rocket
-        background: center no-repeat url('../images/rocket.svg')
-
-    .icon--ghost
-        background: center no-repeat url('../images/ghost.svg')
-
-    .icon--cup
-        background: center no-repeat url('../images/cup.svg')
+        .fa
+            position: absolute
+            top: 50%
+            left: 50%
+            transform: translate(-50%, -50%)
+            color: #FE6696
 
     &__descr
         width: 100%

@@ -10,6 +10,7 @@ var navList = document.querySelector(".nav-list");
 var navbar = document.querySelector(".navbar");
 var toggleBtn = document.querySelector(".toggle-btn");
 var icon = document.querySelector(".toggle-icon");
+var navbarBtn = document.querySelector(".navbar__btn");
 toggleBtn.addEventListener("click", function () {
   navList.classList.toggle("nav-list-active");
   icon.classList.toggle("open");
@@ -52,8 +53,10 @@ document.addEventListener("scroll", function () {
   if (pageYOffset > navbar.offsetHeight) {
     navbar.style.background = "#59687C";
     navbar.style.boxShadow = "0 7px 10px rgba(0, 9, 128, 0.035), 0 9px 18px rgba(0, 9, 128, 0.05)";
+    navbarBtn.classList.add('navbar__btn--active');
   } else {
     navbar.style.background = "transparent";
     navbar.style.boxShadow = "none";
+    navbarBtn.classList.remove('navbar__btn--active');
   }
 });

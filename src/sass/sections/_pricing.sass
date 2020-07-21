@@ -2,6 +2,7 @@
     padding: 8rem 1.5rem
 
     &__wrapper
+        +wrapper
         text-align: center
 
     &__descr
@@ -11,6 +12,11 @@
         margin: 0 auto
         padding: 3rem 0 1rem
         max-width: 800px
+
+    &__link
+        color: #708198
+        text-transform: uppercase
+        font-size: .85rem
 
     .swiper-container 
         margin: 1rem auto
@@ -33,6 +39,9 @@
 
         &-active .card__heading
             background: linear-gradient(45deg, #fe60a1 0%, #ff8765 100%)
+
+        &-active .btn
+            background: #59687c
 
     
 

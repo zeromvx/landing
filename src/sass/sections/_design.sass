@@ -2,6 +2,7 @@
     padding: 5rem 1.5rem
 
     &__wrapper
+        +wrapper
         display: flex
         flex-wrap: wrap
         justify-content: center
@@ -14,6 +15,20 @@
         
     &__descr
         margin: 1rem 0 2rem 0
+
+    &__list
+        position: relative
+
+        .list__item
+            margin: 1.5rem 0
+            padding-left: 1.75rem
+
+            &::before
+                content: '\f058'
+                position: absolute
+                left: 0
+                font-size: 1.2rem
+                font-family: 'FontAwesome'
 
     &__image
         margin: 2rem 1rem

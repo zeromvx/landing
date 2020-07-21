@@ -6,10 +6,8 @@ const {
     watch
 } = require('gulp');
 
-const gulp = require('gulp');
 const imagemin = require('gulp-imagemin');
 const changed = require('gulp-changed');
-const browsersync = require('browser-sync').create();
 const sass = require('gulp-sass');
 const babel = require('gulp-babel');
 const autoprefixer = require('gulp-autoprefixer');
@@ -19,7 +17,7 @@ sass.compiler = require('node-sass');
 
 // optimize images
 function img() {
-    let source = './src/images/*';
+    let source = './src/images/*.png';
 
     return src(source)
         .pipe(changed(source))
@@ -64,6 +62,7 @@ function sassWatch() {
         .pipe(dest('./src/css/'));
 }
 
+
 function watchFiles() {
     watch('./src/sass/**/*', sassWatch);
     watch('./src/*.html', html);
@@ -73,5 +72,3 @@ function watchFiles() {
 }
 
 exports.watch = watchFiles;
-
-// exports.default = sassWatch;

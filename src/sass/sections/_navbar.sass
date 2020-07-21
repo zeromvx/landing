@@ -11,6 +11,7 @@
         background: #59687C
 
     &__wrapper
+        +wrapper
         display: flex
         justify-content: space-between
         align-items: center
@@ -58,18 +59,12 @@
 
     &__btn 
         z-index: 30
-        padding: .6rem 1rem
-        border: none
-        border-radius: 20px
         background: #ffffff
         color: #8B94FF
-        font-size: .75rem
-        font-weight: 600
-        text-transform: uppercase
 
-        @include _768
-            padding: .5rem .8rem
-            font-size: .7rem
+        &--active
+            background: linear-gradient(45deg, #fe60a1 0%, #ff8765 100%)
+            color: #ffffff
 
     &__logo
         z-index: 30
