@@ -1,9 +1,10 @@
-const navList = document.querySelector(".nav-list");
-const navbar = document.querySelector(".navbar");
+const navList = document.querySelector(".nav-list");	// nav links list
+const navbar = document.querySelector(".navbar");		// navbar block
 const toggleBtn = document.querySelector(".toggle-btn");
-const icon = document.querySelector(".toggle-icon");
+const icon = document.querySelector(".toggle-icon");	// toggle-line
 const navbarBtn = document.querySelector(".navbar__btn");
 
+//adaptive toggle btn
 toggleBtn.addEventListener("click", () => {
 	navList.classList.toggle("nav-list-active");
 	icon.classList.toggle("open");
@@ -23,6 +24,7 @@ toggleBtn.addEventListener("click", () => {
 	}
 });
 
+// add background, box-shadow for navbar and change color for btn when we scrolled navbar
 document.addEventListener("scroll", () => {
 
 	if (pageYOffset > navbar.offsetHeight) {

@@ -36,6 +36,7 @@ function css() {
         .pipe(dest('./build/css/'));
 }
 
+// use babel
 function js() {
     let source = './src/js/*';
 
@@ -46,6 +47,7 @@ function js() {
         .pipe(dest('./build/js'))
 }
 
+// add html to build
 function html() {
     let source = './src/*.html';
     return src(source)
