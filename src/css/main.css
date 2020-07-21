@@ -675,6 +675,10 @@ h2 {
     margin: 1rem 0;
     width: 100%;
     max-width: 320px; }
+  .footer__text, .footer__list {
+    margin-top: 1rem; }
+  .footer__list .list__item {
+    margin-bottom: 1rem; }
   .footer .socials__item {
     display: inline-block;
     position: relative;
